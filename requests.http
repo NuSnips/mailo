@@ -1,0 +1,22 @@
+@baseUrl = http://mailo.test
+@token = viwiJJ8kDHi1OrYhwPSvhtnV8P1Szl0jFDTSFBBpB96DHWOh4wgO0vWR0pSA
+
+### Get request
+POST {{baseUrl}}/api/subscribe
+Accept: application/json
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "first_name":"",
+    "last_name":"Winchester",
+    "email":"sam.winchester@email.com",
+    "form_id":2,
+    "tag_ids":[6,5]
+}
+
+### Another endpoint example
+GET {{baseUrl}}/
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer {{token}}
